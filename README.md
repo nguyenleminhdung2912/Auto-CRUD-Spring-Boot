@@ -1,5 +1,3 @@
-Repository name suggestion: autocrud-generator
-
 Short description:
 A small Spring Boot tool that generates full-stack CRUD projects from a SQL schema. Upload a .sql schema (and optional overrides) via the built-in web UI and download a ready-to-build Spring Boot project ZIP.
 
