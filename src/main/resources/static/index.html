@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AutoCRUD - Generator UI</title>
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <main>
+    <h1>AutoCRUD - Generate Project</h1>
+
+    <form id="uploadForm">
+      <label>SQL file (.sql) <input type="file" name="sql" accept=".sql,text/plain" required></label>
+      <label>Overrides file (optional) <input type="file" name="overrides" accept=".yml,.yaml,.json,.properties,text/*"></label>
+      <label>Project name <input type="text" name="project-name" required placeholder="my-project"></label>
+      <div class="actions">
+        <button type="submit">Generate ZIP</button>
+      </div>
+    </form>
+
+    <div id="status" class="status">Ready</div>
+    <details>
+      <summary>Instructions</summary>
+      <ol>
+        <li>Select your SQL schema file (.sql).</li>
+        <li>Optionally select an overrides file (YAML/JSON).</li>
+        <li>Enter a project name and click Generate ZIP.</li>
+        <li>The generated zip will be downloaded automatically.</li>
+      </ol>
+    </details>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

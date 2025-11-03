@@ -1,0 +1,28 @@
+/target/
+/.mvn/
+.mvn/
+/.idea/
+*.iml
+*.log
+*.class
+*.jar
+.DS_Store
+
+# Maven wrapper - keep wrapper scripts in repo (do not ignore mvnw/mvnw.cmd)
+
+# Eclipse/IntelliJ
+.settings/
+.project
+.idea/
+
+# macOS
+.DS_Store
+
+# Lombok
+lombok.config
+
+# VS Code
+.vscode/
+
+# generated sources
+/generated-sources/
