@@ -9,8 +9,8 @@ Quick start
 - Open the UI: http://localhost:8080 and upload your .sql file, optional overrides, and a project name. The generated ZIP will be downloaded.
 
 Important configuration notes
-- BEFORE running the application, update database connection settings in src/main/resources/application.properties to match your local PostgreSQL (url, username, password).
-- The generated projects (the ZIP you download) will include an application.yml in their resources folder — you must edit that generated application.yml to configure the database for the generated project.
+- BEFORE running the generator app, update database connection settings in src/main/resources/application.properties to match your local PostgreSQL (url, username, password).
+- IMPORTANT: the projects you generate and download will include src/main/resources/application.yml — you MUST edit that generated application.yml to configure the database for the generated project before building/running it. The generator's own application.properties is only for the generator app itself.
 
 Files of interest
 - src/main/java/com/project/autocrud — main app and generator logic
@@ -22,4 +22,3 @@ Contributing
 
 License
 MIT
-
